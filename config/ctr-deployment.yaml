@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ctr-service-deployment
+  labels:
+    app: ctr-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ctr-service
+  template:
+    metadata:
+      labels:
+        app: ctr-service
+    spec:
+      containers:
+        - name: ctr-service
+          image: 989713307135.dkr.ecr.us-east-1.amazonaws.com/ctr-service:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8000

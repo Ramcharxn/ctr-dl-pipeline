@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ctr-service-lb
+spec:
+  type: LoadBalancer
+  selector:
+    app: ctr-service
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
