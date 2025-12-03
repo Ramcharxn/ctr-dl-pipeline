@@ -2,6 +2,16 @@
 
 This project implements an end-to-end **Click-Through Rate (CTR)** prediction system inspired by real-world ad ranking pipelines. It includes data preprocessing, deep learning model training, real-time inference via FastAPI, Docker containerization, and deployment on **AWS EKS with self-managed EC2 worker nodes**.
 
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat)
+![AWS%20EKS](https://img.shields.io/badge/AWS%20EKS-FF9900?style=flat)
+![AWS%20ECR](https://img.shields.io/badge/AWS%20ECR-FF9900?style=flat)
+![Optuna](https://img.shields.io/badge/Optuna-4D8BBE?style=flat)
+![LightGBM](https://img.shields.io/badge/LightGBM-00A1E1?style=flat)
+![MLOps](https://img.shields.io/badge/MLOps-000000?style=flat)
+
 ---
 
 ## 🚀 Key Features
@@ -13,6 +23,11 @@ This project implements an end-to-end **Click-Through Rate (CTR)** prediction sy
 - **Docker + AWS ECR containerized deployment**  
 - **AWS EKS control plane + EC2 ASG worker nodes**  
 - **Kubernetes LoadBalancer for `/predict` endpoint**  
+
+---
+
+## 🏗️ Architecture Overview
+<img width="2730" height="798" alt="diagram-export-12-3-2025-11_44_23-AM" src="https://github.com/user-attachments/assets/f1e2f798-6139-4535-9960-0066b1ed5901" />
 
 ---
 
